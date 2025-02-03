@@ -398,3 +398,13 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+#Application Binaries
+PortfolioDotNetApi/bin
+PortfolioDotNetApi/obj
+PortfolioDotNetApi.Models/bin
+PortfolioDotNetApi.Models/obj
+PortfolioDotNetApi.Repos/bin
+PortfolioDotNetApi.Repos/obj
+PortfolioDotNetApi.Seeder/bin
+PortfolioDotNetApi.Seeder/obj
