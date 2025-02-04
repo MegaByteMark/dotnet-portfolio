@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using PortfolioDotNetApi.Api.v1;
 using PortfolioDotNetApi.Api.v2;
+using PortfolioDotNetApi.Health;
 using PortfolioDotNetApi.Repos.DbContext;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -24,6 +25,8 @@ builder.Services.AddApiVersioning(options =>
     options.ApiVersionReader = new Asp.Versioning.UrlSegmentApiVersionReader();
 });
 
+builder.Services.AddHealthChecks().AddCheck<DatabaseHealthCheck>("Database");
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -33,6 +36,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseHealthChecks("/_health");
 
 //Set up API versioning using a route group and then map api endpoints from api endpoints classes for that version.
 var versionSet = app.NewApiVersionSet()
