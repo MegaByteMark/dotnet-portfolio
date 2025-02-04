@@ -34,16 +34,17 @@ internal class Program
         faker.RuleFor(d => d.FirstName, f => f.Name.FirstName());
         faker.RuleFor(d => d.LastName, f => f.Name.LastName());
         faker.RuleFor(d => d.Email, f => f.Internet.Email());
+        faker.RuleFor(d => d.RatingId, f => f.PickRandom(ratings).Id);
 
-        var developers = faker.Generate(10);
-
-        context.Developers.Load();
-        context.Developers.RemoveRange(context.Developers);
-        context.Developers.AddRange(developers);
+        var developers = faker.Generate(1000);
 
         context.Ratings.Load();
         context.Ratings.RemoveRange(context.Ratings);
         context.Ratings.AddRange(ratings);
+
+        context.Developers.Load();
+        context.Developers.RemoveRange(context.Developers);
+        context.Developers.AddRange(developers);
 
         context.SaveChanges();
     }

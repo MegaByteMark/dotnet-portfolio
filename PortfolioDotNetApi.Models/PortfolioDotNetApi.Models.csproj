@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="../../intradotnet-entityframeworkcore-optimizations/intradotnet-entityframeworkcore-interfaces/intradotnet-entityframeworkcore-interfaces.csproj" />
+    <ProjectReference Include="../../intradotnet-entityframeworkcore/intradotnet-entityframeworkcore-interfaces/intradotnet-entityframeworkcore-interfaces.csproj" />
   </ItemGroup>
 
 </Project>

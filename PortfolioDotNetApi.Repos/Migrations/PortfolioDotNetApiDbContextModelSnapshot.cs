@@ -66,6 +66,9 @@ namespace PortfolioDotNetApi.Repos.Migrations
                         .ValueGeneratedOnUpdate()
                         .HasColumnType("datetimeoffset");
 
+                    b.Property<Guid>("RatingId")
+                        .HasColumnType("uniqueidentifier");
+
                     b.Property<byte[]>("RowVersion")
                         .IsConcurrencyToken()
                         .ValueGeneratedOnAddOrUpdate()
@@ -76,53 +79,9 @@ namespace PortfolioDotNetApi.Repos.Migrations
                     b.HasIndex("DeletedOn")
                         .HasFilter("DeletedOn IS NOT NULL");
 
-                    b.ToTable("Developers");
-                });
-
-            modelBuilder.Entity("PortfolioDotNetApi.Models.DeveloperRating", b =>
-                {
-                    b.Property<Guid>("DeveloperId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid>("RatingId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("CreatedBy")
-                        .HasMaxLength(255)
-                        .HasColumnType("nvarchar(255)");
-
-                    b.Property<DateTimeOffset?>("CreatedOn")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("datetimeoffset");
-
-                    b.Property<string>("DeletedBy")
-                        .HasMaxLength(255)
-                        .HasColumnType("nvarchar(255)");
-
-                    b.Property<DateTimeOffset?>("DeletedOn")
-                        .HasColumnType("datetimeoffset");
-
-                    b.Property<string>("LastUpdateBy")
-                        .HasMaxLength(255)
-                        .HasColumnType("nvarchar(255)");
-
-                    b.Property<DateTimeOffset?>("LastUpdateOn")
-                        .ValueGeneratedOnUpdate()
-                        .HasColumnType("datetimeoffset");
-
-                    b.Property<byte[]>("RowVersion")
-                        .IsConcurrencyToken()
-                        .ValueGeneratedOnAddOrUpdate()
-                        .HasColumnType("rowversion");
-
-                    b.HasKey("DeveloperId", "RatingId");
-
-                    b.HasIndex("DeletedOn")
-                        .HasFilter("DeletedOn IS NOT NULL");
-
                     b.HasIndex("RatingId");
 
-                    b.ToTable("DeveloperRatings");
+                    b.ToTable("Developers");
                 });
 
             modelBuilder.Entity("PortfolioDotNetApi.Models.Rating", b =>
@@ -170,33 +129,20 @@ namespace PortfolioDotNetApi.Repos.Migrations
                     b.ToTable("Ratings");
                 });
 
-            modelBuilder.Entity("PortfolioDotNetApi.Models.DeveloperRating", b =>
+            modelBuilder.Entity("PortfolioDotNetApi.Models.Developer", b =>
                 {
-                    b.HasOne("PortfolioDotNetApi.Models.Developer", "Developer")
-                        .WithMany("DeveloperRatings")
-                        .HasForeignKey("DeveloperId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.HasOne("PortfolioDotNetApi.Models.Rating", "Rating")
-                        .WithMany("DeveloperRatings")
+                        .WithMany("Developers")
                         .HasForeignKey("RatingId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Developer");
-
                     b.Navigation("Rating");
-                });
-
-            modelBuilder.Entity("PortfolioDotNetApi.Models.Developer", b =>
-                {
-                    b.Navigation("DeveloperRatings");
                 });
 
             modelBuilder.Entity("PortfolioDotNetApi.Models.Rating", b =>
                 {
-                    b.Navigation("DeveloperRatings");
+                    b.Navigation("Developers");
                 });
 #pragma warning restore 612, 618
         }

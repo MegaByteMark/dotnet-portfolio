@@ -21,8 +21,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="../../intradotnet-entityframeworkcore-optimizations/intradotnet-entityframeworkcore-interfaces/intradotnet-entityframeworkcore-interfaces.csproj" />
-    <ProjectReference Include="../../intradotnet-entityframeworkcore-optimizations/intradotnet-entityframeworkcore-optimizations/intradotnet-entityframeworkcore-optimizations.csproj" />
+    <ProjectReference Include="../../intradotnet-entityframeworkcore/intradotnet-entityframeworkcore-interfaces/intradotnet-entityframeworkcore-interfaces.csproj" />
+    <ProjectReference Include="../../intradotnet-entityframeworkcore/intradotnet-entityframeworkcore/intradotnet-entityframeworkcore.csproj" />
     <ProjectReference Include="../PortfolioDotNetApi.Models/PortfolioDotNetApi.Models.csproj" />
   </ItemGroup>
 
