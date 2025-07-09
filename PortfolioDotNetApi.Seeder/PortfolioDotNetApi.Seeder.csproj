@@ -9,7 +9,7 @@
 
   <ItemGroup>
     <ProjectReference Include="../PortfolioDotNetApi.Models/PortfolioDotNetApi.Models.csproj" />
-    <ProjectReference Include="../PortfolioDotNetApi.Repos/PortfolioDotNetApi.Repos.csproj" />
+    <ProjectReference Include="../PortfolioDotNetApi.Infrastructure/PortfolioDotNetApi.Infrastructure.csproj" />
   </ItemGroup>
 
   <ItemGroup>
