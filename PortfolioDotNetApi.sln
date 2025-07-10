@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PortfolioDotNetApi.Seeder",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PortfolioDotNetApi.Services", "PortfolioDotNetApi.Services\PortfolioDotNetApi.Services.csproj", "{4A7CE03E-82BB-4737-9DA9-D26936EBEC93}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PortfolioDotNetApi.DTOs", "PortfolioDotNetApi.DTOs\PortfolioDotNetApi.DTOs.csproj", "{B12BDDF1-9429-4B4B-9C99-5902B9F43350}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -83,6 +85,18 @@ Global
 		{4A7CE03E-82BB-4737-9DA9-D26936EBEC93}.Release|x64.Build.0 = Release|Any CPU
 		{4A7CE03E-82BB-4737-9DA9-D26936EBEC93}.Release|x86.ActiveCfg = Release|Any CPU
 		{4A7CE03E-82BB-4737-9DA9-D26936EBEC93}.Release|x86.Build.0 = Release|Any CPU
+		{B12BDDF1-9429-4B4B-9C99-5902B9F43350}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B12BDDF1-9429-4B4B-9C99-5902B9F43350}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B12BDDF1-9429-4B4B-9C99-5902B9F43350}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{B12BDDF1-9429-4B4B-9C99-5902B9F43350}.Debug|x64.Build.0 = Debug|Any CPU
+		{B12BDDF1-9429-4B4B-9C99-5902B9F43350}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B12BDDF1-9429-4B4B-9C99-5902B9F43350}.Debug|x86.Build.0 = Debug|Any CPU
+		{B12BDDF1-9429-4B4B-9C99-5902B9F43350}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B12BDDF1-9429-4B4B-9C99-5902B9F43350}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B12BDDF1-9429-4B4B-9C99-5902B9F43350}.Release|x64.ActiveCfg = Release|Any CPU
+		{B12BDDF1-9429-4B4B-9C99-5902B9F43350}.Release|x64.Build.0 = Release|Any CPU
+		{B12BDDF1-9429-4B4B-9C99-5902B9F43350}.Release|x86.ActiveCfg = Release|Any CPU
+		{B12BDDF1-9429-4B4B-9C99-5902B9F43350}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
