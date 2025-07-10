@@ -2,7 +2,7 @@ using IntraDotNet.EntityFrameworkCore.Infrastructure.Relational;
 using Microsoft.EntityFrameworkCore;
 using PortfolioDotNetApi.Models;
 
-namespace PortfolioDotNetApi.Repos.DbContext;
+namespace PortfolioDotNetApi.Infrastructure.DbContext;
 
 public class PortfolioDotNetApiDbContext : Microsoft.EntityFrameworkCore.DbContext
 {

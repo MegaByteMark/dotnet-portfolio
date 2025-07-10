@@ -6,4 +6,13 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="IntraDotNet.Results" Version="1.0.0" />
+    <PackageReference Include="IntraDotNet.Services" Version="1.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="../PortfolioDotNetApi.Infrastructure/PortfolioDotNetApi.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>
