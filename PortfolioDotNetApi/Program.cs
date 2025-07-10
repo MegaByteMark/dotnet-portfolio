@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using PortfolioDotNetApi.Health;
-using PortfolioDotNetApi.Repos.DbContext;
+using PortfolioDotNetApi.Infrastructure.DbContext;
 
 var builder = WebApplication.CreateBuilder(args);
 

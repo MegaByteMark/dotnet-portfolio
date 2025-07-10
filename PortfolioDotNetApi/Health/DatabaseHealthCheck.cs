@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
-using PortfolioDotNetApi.Repos.DbContext;
+using PortfolioDotNetApi.Infrastructure.DbContext;
 
 namespace PortfolioDotNetApi.Health;
 

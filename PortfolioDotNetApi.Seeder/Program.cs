@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using PortfolioDotNetApi.Models;
-using PortfolioDotNetApi.Repos.DbContext;
+using PortfolioDotNetApi.Infrastructure.DbContext;
 
 internal class Program
 {
