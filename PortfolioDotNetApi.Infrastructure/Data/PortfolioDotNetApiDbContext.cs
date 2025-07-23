@@ -1,10 +1,10 @@
 using IntraDotNet.EntityFrameworkCore.Infrastructure.Relational;
 using Microsoft.EntityFrameworkCore;
-using PortfolioDotNetApi.Models;
+using PortfolioDotNetApi.Domain.Entities;
 
-namespace PortfolioDotNetApi.Infrastructure.DbContext;
+namespace PortfolioDotNetApi.Infrastructure.Data;
 
-public class PortfolioDotNetApiDbContext : Microsoft.EntityFrameworkCore.DbContext
+public class PortfolioDotNetApiDbContext : DbContext
 {
     public DbSet<Customer> Customers { get; set; }
     public DbSet<Employee> Employees { get; set; }

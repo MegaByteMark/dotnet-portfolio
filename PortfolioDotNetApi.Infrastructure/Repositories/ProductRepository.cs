@@ -1,12 +1,9 @@
 using IntraDotNet.EntityFrameworkCore.Infrastructure.Repositories;
-using PortfolioDotNetApi.Infrastructure.DbContext;
-using PortfolioDotNetApi.Models;
+using PortfolioDotNetApi.Domain.Entities;
+using PortfolioDotNetApi.Infrastructure.Data;
 
 namespace PortfolioDotNetApi.Infrastructure.Repositories;
 
-public class ProductRepository: BaseAuditableRepository<Product, PortfolioDotNetApiDbContext>
+public class ProductRepository(PortfolioDotNetApiDbContext context) : BaseAuditableRepository<Product, PortfolioDotNetApiDbContext>(context)
 {
-    public ProductRepository(PortfolioDotNetApiDbContext context) : base(context)
-    {
-    }
 }

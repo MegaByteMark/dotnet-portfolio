@@ -1,11 +1,9 @@
 using IntraDotNet.EntityFrameworkCore.Infrastructure.Repositories;
-using PortfolioDotNetApi.Infrastructure.DbContext;
+using PortfolioDotNetApi.Domain.Entities;
+using PortfolioDotNetApi.Infrastructure.Data;
 
 namespace PortfolioDotNetApi.Infrastructure.Repositories;
 
-public class CustomerRepository: BaseAuditableRepository<Models.Customer, PortfolioDotNetApiDbContext>
+public class CustomerRepository(PortfolioDotNetApiDbContext dbContext) : BaseAuditableRepository<Customer, PortfolioDotNetApiDbContext>(dbContext)
 {
-    public CustomerRepository(PortfolioDotNetApiDbContext dbContext) : base(dbContext)
-    {
-    }
 }

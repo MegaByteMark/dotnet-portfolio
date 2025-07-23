@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace PortfolioDotNetApi.Models;
+namespace PortfolioDotNetApi.Domain.Entities;
 
 public sealed class Employee : Person
 {

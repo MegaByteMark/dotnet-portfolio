@@ -1,4 +1,4 @@
-namespace PortfolioDotNetApi.Models;
+namespace PortfolioDotNetApi.Domain.Entities;
 
 public enum OrderStatus
 {

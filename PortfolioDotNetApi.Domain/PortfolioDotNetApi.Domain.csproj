@@ -7,12 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="IntraDotNet.Results" Version="1.0.0" />
-    <PackageReference Include="IntraDotNet.Services" Version="1.0.0" />
+    <Folder Include="Exceptions/" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="../PortfolioDotNetApi.Infrastructure/PortfolioDotNetApi.Infrastructure.csproj" />
+    <PackageReference Include="IntraDotNet.Domain.Core" Version="1.0.0" />
   </ItemGroup>
 
 </Project>

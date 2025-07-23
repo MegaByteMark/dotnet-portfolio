@@ -1,6 +1,6 @@
 using IntraDotNet.EntityFrameworkCore.Infrastructure.Repositories.UnitOfWork;
 using Microsoft.EntityFrameworkCore;
-using PortfolioDotNetApi.Infrastructure.DbContext;
+using PortfolioDotNetApi.Infrastructure.Data;
 using PortfolioDotNetApi.Infrastructure.Repositories;
 
 namespace PortfolioDotNetApi.Infrastructure.UnitOfWork;

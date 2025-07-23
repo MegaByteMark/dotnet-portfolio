@@ -1,8 +1,8 @@
 ﻿using Bogus;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
-using PortfolioDotNetApi.Models;
-using PortfolioDotNetApi.Infrastructure.DbContext;
+using PortfolioDotNetApi.Domain.Entities;
+using PortfolioDotNetApi.Infrastructure.Data;
 
 internal class Program
 {

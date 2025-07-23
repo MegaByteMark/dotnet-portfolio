@@ -3,17 +3,20 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using PortfolioDotNetApi.Infrastructure.DbContext;
+using PortfolioDotNetApi.Infrastructure.Data;
 
 #nullable disable
 
 namespace PortfolioDotNetApi.Infrastructure.Migrations
 {
     [DbContext(typeof(PortfolioDotNetApiDbContext))]
-    partial class PortfolioDotNetApiDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250709205802_InitialCreate")]
+    partial class InitialCreate
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

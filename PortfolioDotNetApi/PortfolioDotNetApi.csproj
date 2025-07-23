@@ -19,7 +19,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="../PortfolioDotNetApi.Models/PortfolioDotNetApi.Models.csproj" />
+    <ProjectReference Include="../PortfolioDotNetApi.Application/PortfolioDotNetApi.Application.csproj" />
+    <ProjectReference Include="../PortfolioDotNetApi.Domain/PortfolioDotNetApi.Domain.csproj" />
     <ProjectReference Include="../PortfolioDotNetApi.Infrastructure/PortfolioDotNetApi.Infrastructure.csproj" />
   </ItemGroup>
 

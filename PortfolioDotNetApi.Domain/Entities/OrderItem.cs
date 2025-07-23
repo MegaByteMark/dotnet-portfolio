@@ -1,8 +1,8 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using IntraDotNet.Infrastructure.Core;
+using IntraDotNet.Domain.Core;
 
-namespace PortfolioDotNetApi.Models;
+namespace PortfolioDotNetApi.Domain.Entities;
 
 public class OrderItem : IAuditable, IRowVersion
 {

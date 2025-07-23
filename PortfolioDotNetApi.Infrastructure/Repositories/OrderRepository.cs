@@ -1,12 +1,9 @@
 using IntraDotNet.EntityFrameworkCore.Infrastructure.Repositories;
-using PortfolioDotNetApi.Infrastructure.DbContext;
-using PortfolioDotNetApi.Models;
+using PortfolioDotNetApi.Domain.Entities;
+using PortfolioDotNetApi.Infrastructure.Data;
 
 namespace PortfolioDotNetApi.Infrastructure.Repositories;
 
-public class OrderRepository: BaseAuditableRepository<Order, PortfolioDotNetApiDbContext>
+public class OrderRepository(PortfolioDotNetApiDbContext context) : BaseAuditableRepository<Order, PortfolioDotNetApiDbContext>(context)
 {
-    public OrderRepository(PortfolioDotNetApiDbContext context) : base(context)
-    {
-    }
 }

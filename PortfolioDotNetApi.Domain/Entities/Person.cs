@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations;
-using IntraDotNet.Infrastructure.Core;
+using IntraDotNet.Domain.Core;
 
-namespace PortfolioDotNetApi.Models;
+namespace PortfolioDotNetApi.Domain.Entities;
 
 public abstract class Person: IAuditable, IRowVersion
 {
