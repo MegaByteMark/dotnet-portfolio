@@ -11,6 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="8.2.3" />
     <PackageReference Include="IntraDotNet.Domain.Core" Version="1.0.0" />
   </ItemGroup>
 
